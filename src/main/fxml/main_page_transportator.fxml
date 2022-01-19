@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.2993311036789298" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.app.MainPageTransportatorController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Text fill="#071214" layoutX="91.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Page Transportator" textAlignment="CENTER" wrappingWidth="154.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="listaCereri" layoutX="88.0" layoutY="69.0" mnemonicParsing="false" onAction="#listaCereriButtonOnAction" prefHeight="25.0" prefWidth="161.0" text="Lista cereri transport" />
+            <Button fx:id="publicaOferta" layoutX="88.0" layoutY="110.0" mnemonicParsing="false" onAction="#publicaOfertaButtonOnAction" prefHeight="25.0" prefWidth="161.0" text="Publica oferta transport" />
+            <Text layoutX="92.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recomandari" wrappingWidth="154.0" />
+         </children></AnchorPane>
+    <AnchorPane fx:id="mapAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <SubScene fx:id="mapSubscene" height="800.0" width="836.0">
+              <root>
+                <Region />
+              </root>
+            </SubScene>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

@@ -19,6 +19,7 @@ repositories {
     maven {
         url 'https://esri.jfrog.io/artifactory/arcgis'
     }
+    mavenCentral()
 }
 
 configurations {
@@ -27,6 +28,7 @@ configurations {
 
 dependencies {
     implementation "com.esri.arcgisruntime:arcgis-java:$arcgisVersion"
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
     natives "com.esri.arcgisruntime:arcgis-java-jnilibs:$arcgisVersion"
     natives "com.esri.arcgisruntime:arcgis-java-resources:$arcgisVersion"
 }
